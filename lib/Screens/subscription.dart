@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/welcome.dart';
 
 class Subscription extends StatefulWidget {
   @override
@@ -18,9 +19,15 @@ class _SubscriptionState extends State<Subscription> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(
-                  Icons.arrow_back,
-                  color: Colors.white,
+                GestureDetector(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Welcome())),
+                  child: Icon(
+                    Icons.arrow_back,
+                    color: Colors.white,
+                  ),
                 ),
                 Icon(
                   Icons.notifications_none_outlined,
