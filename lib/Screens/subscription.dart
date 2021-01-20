@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/signup.dart';
 import 'package:selfcareapp/Screens/welcome.dart';
 
 class Subscription extends StatefulWidget {
@@ -29,9 +30,15 @@ class _SubscriptionState extends State<Subscription> {
                     color: Colors.white,
                   ),
                 ),
-                Icon(
-                  Icons.notifications_none_outlined,
-                  color: Colors.white,
+                GestureDetector(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => SignUp())),
+                  child: Icon(
+                    Icons.notifications_none_outlined,
+                    color: Colors.white,
+                  ),
                 ),
               ],
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/recommendation.dart';
 
 class Welcome extends StatefulWidget {
   @override
@@ -9,6 +10,7 @@ class _WelcomeState extends State<Welcome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[50],
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -148,9 +150,13 @@ class _WelcomeState extends State<Welcome> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 45),
                       child: FlatButton(
+                        onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    Recommendation())),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
-                        onPressed: () {},
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
                               vertical: 14, horizontal: 20),
