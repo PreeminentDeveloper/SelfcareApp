@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selfcareapp/Screens/Tabs/home.dart';
-import 'package:selfcareapp/Screens/subscription.dart';
+import 'package:selfcareapp/Screens/self_care_app.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: SelfCareApp(),
     );
   }
 }

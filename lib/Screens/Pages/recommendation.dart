@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selfcareapp/Screens/course_payment.dart';
-import 'package:selfcareapp/Screens/welcome.dart';
+import 'package:selfcareapp/Screens/Pages/course_payment.dart';
 
 class Recommendation extends StatefulWidget {
   @override
@@ -25,10 +24,7 @@ class _RecommendationState extends State<Recommendation> {
                     // mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       GestureDetector(
-                        onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (BuildContext context) => Welcome())),
+                        onTap: () => Navigator.pop(context),
                         child: Icon(
                           Icons.arrow_back,
                           color: Colors.white,

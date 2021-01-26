@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:selfcareapp/Screens/login.dart';
+import 'package:selfcareapp/Screens/Tabs/profile.dart';
+import 'package:selfcareapp/Screens/Pages/signup.dart';
 
-class SignUp extends StatefulWidget {
+class LogIn extends StatefulWidget {
   @override
-  _SignUpState createState() => _SignUpState();
+  _LogInState createState() => _LogInState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _LogInState extends State<LogIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,34 +16,44 @@ class _SignUpState extends State<SignUp> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+              padding: const EdgeInsets.only(
+                  left: 20, right: 20, top: 50, bottom: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
-                    Icons.arrow_back,
-                  ),
                   GestureDetector(
-                      onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext contex) => LogIn())),
-                      child: Text("Log in"))
+                    onTap: () => Navigator.pop(context),
+                    child: Icon(
+                      Icons.arrow_back,
+                    ),
+                  ),
                 ],
               ),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Column(
+                  children: [
+                    Text(
+                      "Log in",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 40),
-                  child: Column(
-                    children: [
-                      Text(
-                        "Create your account",
-                        style: TextStyle(fontSize: 25),
-                      )
-                    ],
+                  padding: EdgeInsets.symmetric(vertical: 20),
+                  child: Container(
+                    width: 150.0,
+                    height: 150.0,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.orange),
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage("lib/Assets/avatar.jpg"),
+                        )),
                   ),
                 ),
                 Padding(
@@ -56,25 +67,7 @@ class _SignUpState extends State<SignUp> {
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Your Name",
-                        // hintStyle: TextStyle(fontSize: 18),
-                        contentPadding: EdgeInsets.only(left: 20),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                  child: Container(
-                    height: 50,
-                    decoration: BoxDecoration(
-                        color: Colors.pink[50],
-                        borderRadius: BorderRadius.circular(30)),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: "Email",
+                        hintText: "Username",
                         // hintStyle: TextStyle(fontSize: 18),
                         contentPadding: EdgeInsets.only(left: 20),
                       ),
@@ -94,6 +87,10 @@ class _SignUpState extends State<SignUp> {
                         border: InputBorder.none,
                         hintText: "Password",
                         // hintStyle: TextStyle(fontSize: 18),
+                        suffixIcon: Text(
+                          "Forgot?",
+                          style: TextStyle(color: Colors.red),
+                        ),
                         contentPadding: EdgeInsets.only(left: 20),
                       ),
                     ),
@@ -105,14 +102,14 @@ class _SignUpState extends State<SignUp> {
                     onPressed: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) => LogIn())),
+                            builder: (BuildContext context) => Profile())),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                           vertical: 14, horizontal: 100),
                       child: Text(
-                        "Sign up",
+                        "Log In",
                         style: TextStyle(
                           color: Colors.white,
                         ),
@@ -121,10 +118,13 @@ class _SignUpState extends State<SignUp> {
                     color: Colors.orange,
                   ),
                 ),
-                Container(
-                  width: MediaQuery.of(context).size.width * 0.7,
+                GestureDetector(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext contex) => SignUp())),
                   child: Text(
-                    "By pressing 'Sign Up' you agree to our terms & conditions",
+                    "Sign up?",
                     textAlign: TextAlign.center,
                     // style: TextStyle(fontSize: 16),
                   ),

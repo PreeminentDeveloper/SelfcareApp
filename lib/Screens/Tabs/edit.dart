@@ -8,6 +8,13 @@ class Edit extends StatefulWidget {
 class _EditState extends State<Edit> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.orange,
+      body: SafeArea(
+        child: Container(
+          color: Colors.orange[50],
+        ),
+      ),
+    );
   }
 }
