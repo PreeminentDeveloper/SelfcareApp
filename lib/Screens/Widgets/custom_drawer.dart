@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/Pages/course_payment.dart';
+import 'package:selfcareapp/Screens/Pages/courses.dart';
 import 'package:selfcareapp/Screens/Pages/forum.dart';
 import 'package:selfcareapp/Screens/Pages/login.dart';
 import 'package:selfcareapp/Screens/Pages/recommendation.dart';
@@ -33,6 +35,35 @@ class CustomDrawer extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
               child: Column(
                 children: [
+                  ListTile(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => Courses())),
+                    title: Text(
+                      "Courses",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_forward_ios,
+                      size: 18,
+                    ),
+                  ),
+                  ListTile(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                CoursePayment())),
+                    title: Text(
+                      "Course Payment",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_forward_ios,
+                      size: 18,
+                    ),
+                  ),
                   ListTile(
                     onTap: () => Navigator.push(
                         context,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/Widgets/custom_card.dart';
 
 class Listing extends StatefulWidget {
   @override
@@ -38,8 +39,6 @@ class _ListingState extends State<Listing> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: "Search",
-                            hintStyle: TextStyle(fontSize: 18),
                             suffixIcon: Icon(
                               Icons.search,
                               color: Colors.black,
@@ -64,11 +63,103 @@ class _ListingState extends State<Listing> {
             Padding(
               padding: EdgeInsets.only(left: 15, right: 15, bottom: 3, top: 25),
               child: Text(
-                "I want to learn",
+                "I want to learn...",
                 style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12),
+              child: Row(
+                children: [
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Cardiology Education",
+                        // style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Food Science",
+                        // style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Animal Science",
+                        style: TextStyle(color: Colors.white),
+                      )),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, bottom: 20),
+              child: Row(
+                children: [
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Nurses",
+                        // style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Personal Development",
+                        // style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Medical Writing",
+                        // style: TextStyle(color: Colors.white),
+                      )),
+                ],
               ),
             ),
             Expanded(
@@ -78,6 +169,73 @@ class _ListingState extends State<Listing> {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),
+                child: ListView(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(30.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CustomCard(
+                                  imageURL: "lib/Assets/medical_research.jpg",
+                                  topic:
+                                      "Medical Research Advanced Training Course",
+                                  cost: "\u{20A6}10,500"),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              CustomCard(
+                                  imageURL: "lib/Assets/kidney.jpg",
+                                  topic:
+                                      "Understanding How the Kidney functions Course",
+                                  cost: "\u{20A6}7,500")
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CustomCard(
+                                    imageURL: "lib/Assets/cholesterol.jpg",
+                                    topic:
+                                        "The Human Cholesterol Level Management Course",
+                                    cost: "\u{20A6}10,500"),
+                                SizedBox(
+                                  width: 15,
+                                ),
+                                CustomCard(
+                                    imageURL: "lib/Assets/blood_tissues.jpg",
+                                    topic: "The Human Blood Vessels Course",
+                                    cost: "\u{20A6}8,000")
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20, bottom: 10),
+                            child: FlatButton(
+                              onPressed: () {},
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30)),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 14, horizontal: 25),
+                                child: Text(
+                                  "Show More",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 16),
+                                ),
+                              ),
+                              color: Colors.orange,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           ],

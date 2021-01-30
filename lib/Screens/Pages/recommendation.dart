@@ -73,11 +73,7 @@ class _RecommendationState extends State<Recommendation> {
                   Padding(
                     padding: const EdgeInsets.only(top: 20, bottom: 40),
                     child: FlatButton(
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  CoursePayment())),
+                      onPressed: () {},
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30)),
                       child: Padding(

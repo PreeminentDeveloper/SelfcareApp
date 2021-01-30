@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/Widgets/custom_list_tile2.dart';
 
 class Forum extends StatefulWidget {
   @override
@@ -38,11 +39,8 @@ class _ForumState extends State<Forum> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: "Search",
-                            hintStyle: TextStyle(fontSize: 18),
                             suffixIcon: Icon(
                               Icons.search,
-                              color: Colors.black,
                               size: 20,
                             ),
                             contentPadding: EdgeInsets.all(8),
@@ -71,6 +69,54 @@ class _ForumState extends State<Forum> {
                     fontWeight: FontWeight.bold),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, bottom: 20),
+              child: Row(
+                children: [
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      color: Colors.orange[50],
+                      onPressed: () {},
+                      child: Text(
+                        "Featured Courses",
+                        // style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          side: BorderSide(
+                            color: Colors.white,
+                          )),
+                      onPressed: () {},
+                      child: Text(
+                        "Most Interest",
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FlatButton(
+                      height: 27,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          side: BorderSide(
+                            color: Colors.white,
+                          )),
+                      onPressed: () {},
+                      child: Text(
+                        "Previous",
+                        style: TextStyle(color: Colors.white),
+                      )),
+                ],
+              ),
+            ),
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
@@ -78,6 +124,43 @@ class _ForumState extends State<Forum> {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),
+                child: ListView(
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                  children: [
+                    CustomListTile2(
+                      title: "Cardiology",
+                      subTitle: "Advanced Training 2m 6s",
+                    ),
+                    CustomListTile2(
+                      title: "The Human Kidney",
+                      subTitle: "Professional Strategy 2m 6s",
+                    ),
+                    CustomListTile2(
+                      title: "The Human Diet",
+                      subTitle: "Ultimate Course 45m 6s",
+                    ),
+                    CustomListTile2(
+                      title: "Digestion",
+                      subTitle: "Simple Tutorial 1hr 10m",
+                    ),
+                    CustomListTile2(
+                      title: "Cholestrol",
+                      subTitle: "Brand Awareness Training 30m 5s",
+                    ),
+                    CustomListTile2(
+                      title: "Blood Tissues",
+                      subTitle: "Motion Design Training 1hr 30m",
+                    ),
+                    CustomListTile2(
+                      title: "Hepatitis",
+                      subTitle: "Music video Editing 2hr 30s",
+                    ),
+                    CustomListTile2(
+                      title: "Photosynthesis",
+                      subTitle: "Advanced Training 50m 6s",
+                    ),
+                  ],
+                ),
               ),
             )
           ],
