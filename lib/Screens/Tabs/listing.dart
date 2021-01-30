@@ -70,95 +70,125 @@ class _ListingState extends State<Listing> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 12),
-              child: Row(
+            Container(
+              height: 50,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Cardiology Education",
-                        // style: TextStyle(color: Colors.white),
-                      )),
-                  SizedBox(
-                    width: 10,
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Row(
+                      children: [
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Cardiology Education",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Food Science",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Animal Science",
+                            )),
+                      ],
+                    ),
                   ),
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Food Science",
-                        // style: TextStyle(color: Colors.white),
-                      )),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Animal Science",
-                        style: TextStyle(color: Colors.white),
-                      )),
                 ],
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 12, bottom: 20),
-              child: Row(
+            Container(
+              height: 50,
+              padding: EdgeInsets.only(bottom: 20),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Nurses",
-                        // style: TextStyle(color: Colors.white),
-                      )),
-                  SizedBox(
-                    width: 10,
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Row(
+                      children: [
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Nurses",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Personal Development",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Medical Writing",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Psychology",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                      ],
+                    ),
                   ),
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Personal Development",
-                        // style: TextStyle(color: Colors.white),
-                      )),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Medical Writing",
-                        // style: TextStyle(color: Colors.white),
-                      )),
                 ],
               ),
             ),

@@ -7,6 +7,8 @@ class Subscription extends StatefulWidget {
 }
 
 class _SubscriptionState extends State<Subscription> {
+  bool isClicked = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,11 +59,56 @@ class _SubscriptionState extends State<Subscription> {
                   child: ListView(
                     children: [
                       Padding(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 50, horizontal: 30),
+                        padding: EdgeInsets.symmetric(horizontal: 30),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 25),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          "Cart",
+                                          style: TextStyle(
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {
+                                      if (isClicked == false) {
+                                        setState(() {
+                                          isClicked = true;
+                                        });
+                                      }
+                                    },
+                                    child: Text(
+                                      "Payment",
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          color: isClicked == true
+                                              ? Colors.orange
+                                              : Colors.black),
+                                    ),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Text(
+                                      "Confirm",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                             CustomCreditCard(
                                 cardNumber: "0000 0000 0000 0000",
                                 cvv: "0000",

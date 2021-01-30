@@ -61,59 +61,76 @@ class _ForumState extends State<Forum> {
             ),
             Padding(
               padding: EdgeInsets.only(left: 15, right: 15, bottom: 3, top: 25),
-              child: Text(
-                "Forum",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 12, bottom: 20),
               child: Row(
                 children: [
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      color: Colors.orange[50],
-                      onPressed: () {},
-                      child: Text(
-                        "Featured Courses",
-                        // style: TextStyle(color: Colors.white),
-                      )),
-                  SizedBox(
-                    width: 10,
+                  Text(
+                    "Forum",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
                   ),
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          side: BorderSide(
-                            color: Colors.white,
-                          )),
-                      onPressed: () {},
-                      child: Text(
-                        "Most Interest",
-                        style: TextStyle(color: Colors.white),
-                      )),
-                  SizedBox(
-                    width: 10,
+                  Icon(
+                    Icons.arrow_drop_down,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+            ),
+            Container(
+              height: 50,
+              padding: EdgeInsets.only(bottom: 20),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Row(
+                      children: [
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            color: Colors.orange[50],
+                            onPressed: () {},
+                            child: Text(
+                              "Featured Courses",
+                              // style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                                side: BorderSide(
+                                  color: Colors.white,
+                                )),
+                            onPressed: () {},
+                            child: Text(
+                              "Most Interest",
+                              style: TextStyle(color: Colors.white),
+                            )),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        FlatButton(
+                            height: 27,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                                side: BorderSide(
+                                  color: Colors.white,
+                                )),
+                            onPressed: () {},
+                            child: Text(
+                              "Previous",
+                              style: TextStyle(color: Colors.white),
+                            )),
+                      ],
+                    ),
                   ),
-                  FlatButton(
-                      height: 27,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          side: BorderSide(
-                            color: Colors.white,
-                          )),
-                      onPressed: () {},
-                      child: Text(
-                        "Previous",
-                        style: TextStyle(color: Colors.white),
-                      )),
                 ],
               ),
             ),
