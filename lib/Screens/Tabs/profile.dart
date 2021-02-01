@@ -98,11 +98,7 @@ class _ProfileState extends State<Profile> {
                     Padding(
                       padding: const EdgeInsets.only(top: 20, bottom: 40),
                       child: FlatButton(
-                        onPressed: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    CoursePayment())),
+                        onPressed: () {},
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15)),
                         child: Padding(
@@ -133,14 +129,14 @@ class _ProfileState extends State<Profile> {
                       onTap: () {},
                       leading: Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(5)),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.store_mall_directory,
                             size: 20,
-                            color: Colors.white,
+                            color: Colors.blueGrey,
                           ),
                         ),
                       ),
@@ -157,14 +153,14 @@ class _ProfileState extends State<Profile> {
                       onTap: () {},
                       leading: Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(5)),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.subscriptions,
                             size: 20,
-                            color: Colors.white,
+                            color: Colors.blueGrey,
                           ),
                         ),
                       ),
@@ -181,14 +177,14 @@ class _ProfileState extends State<Profile> {
                       onTap: () {},
                       leading: Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(5)),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.payment,
                             size: 20,
-                            color: Colors.white,
+                            color: Colors.blueGrey,
                           ),
                         ),
                       ),

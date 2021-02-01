@@ -87,11 +87,14 @@ class _LogInState extends State<LogIn> {
                         border: InputBorder.none,
                         hintText: "Password",
                         // hintStyle: TextStyle(fontSize: 18),
-                        suffixIcon: Text(
-                          "Forgot?",
-                          style: TextStyle(color: Colors.red),
+                        suffixIcon: Padding(
+                          padding: const EdgeInsets.only(top: 15, right: 20),
+                          child: Text(
+                            "Forgot?",
+                            style: TextStyle(color: Colors.orange),
+                          ),
                         ),
-                        contentPadding: EdgeInsets.only(left: 20),
+                        contentPadding: EdgeInsets.only(left: 20, top: 15),
                       ),
                     ),
                   ),

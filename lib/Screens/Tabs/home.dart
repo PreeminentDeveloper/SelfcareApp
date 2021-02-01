@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
                               vertical: 18, horizontal: 15),
                           child: Text(
                             "Are you having headache?",
-                            style: TextStyle(fontSize: 30),
+                            style: TextStyle(fontSize: 28, height: 1.5),
                           ),
                         ),
                         Padding(
@@ -91,13 +91,16 @@ class _HomeState extends State<Home> {
                                       horizontal: 20, vertical: 14),
                                   child: Text(
                                     "A. Yes",
-                                    style: TextStyle(fontSize: 24),
+                                    style: TextStyle(fontSize: 22),
                                   ),
                                 ),
                                 Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20, vertical: 12),
-                                    child: Icon(Icons.check_box_outline_blank))
+                                    child: Icon(
+                                      Icons.check_box_outline_blank,
+                                      size: 22,
+                                    ))
                               ],
                             ),
                           ),
@@ -116,13 +119,16 @@ class _HomeState extends State<Home> {
                                       horizontal: 20, vertical: 14),
                                   child: Text(
                                     "B. No",
-                                    style: TextStyle(fontSize: 24),
+                                    style: TextStyle(fontSize: 22),
                                   ),
                                 ),
                                 Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20, vertical: 12),
-                                    child: Icon(Icons.check_box_outline_blank))
+                                    child: Icon(
+                                      Icons.check_box_outline_blank,
+                                      size: 22,
+                                    ))
                               ],
                             ),
                           ),
@@ -141,13 +147,16 @@ class _HomeState extends State<Home> {
                                       horizontal: 20, vertical: 14),
                                   child: Text(
                                     "C. Slightly",
-                                    style: TextStyle(fontSize: 24),
+                                    style: TextStyle(fontSize: 22),
                                   ),
                                 ),
                                 Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20, vertical: 12),
-                                    child: Icon(Icons.check_box_outline_blank))
+                                    child: Icon(
+                                      Icons.check_box_outline_blank,
+                                      size: 22,
+                                    ))
                               ],
                             ),
                           ),
