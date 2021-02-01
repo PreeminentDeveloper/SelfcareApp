@@ -32,9 +32,12 @@ class _VideoPlayerState extends State<VideoPlayer> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-              child: Icon(
-                Icons.close,
-                color: Colors.white,
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Icon(
+                  Icons.close,
+                  color: Colors.white,
+                ),
               ),
             ),
             Container(

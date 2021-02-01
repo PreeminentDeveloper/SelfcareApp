@@ -21,7 +21,7 @@ class _ListingState extends State<Listing> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
-                    onTap: () => Navigator.pop(context),
+                    // onTap: () => Navigator.pop(context),
                     child: Icon(
                       Icons.arrow_back,
                       color: Colors.white,
@@ -31,7 +31,7 @@ class _ListingState extends State<Listing> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Container(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.only(bottom: 10),
                         height: 30,
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -39,10 +39,13 @@ class _ListingState extends State<Listing> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.search,
-                              color: Colors.black,
-                              size: 20,
+                            suffixIcon: Padding(
+                              padding: const EdgeInsets.only(top: 5),
+                              child: Icon(
+                                Icons.search,
+                                color: Colors.black,
+                                size: 20,
+                              ),
                             ),
                             contentPadding: EdgeInsets.all(8),
                           ),

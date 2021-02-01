@@ -59,56 +59,43 @@ class _SubscriptionState extends State<Subscription> {
                   child: ListView(
                     children: [
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 30),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 25),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  GestureDetector(
-                                    onTap: () {},
-                                    child: Column(
-                                      children: [
-                                        Text(
-                                          "Cart",
-                                          style: TextStyle(
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      if (isClicked == false) {
-                                        setState(() {
-                                          isClicked = true;
-                                        });
-                                      }
-                                    },
-                                    child: Text(
-                                      "Payment",
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          color: isClicked == true
-                                              ? Colors.orange
-                                              : Colors.black),
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {},
-                                    child: Text(
-                                      "Confirm",
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
+                            Container(
+                                height: 65,
+                                child: DefaultTabController(
+                                    length: 3,
+                                    child: Scaffold(
+                                      backgroundColor: Colors.orange[50],
+                                      appBar: TabBar(
+                                          tabs: [
+                                            Tab(
+                                              child: Text(
+                                                'Cart',
+                                              ),
+                                            ),
+                                            Tab(
+                                              child: Text(
+                                                'Payment',
+                                              ),
+                                            ),
+                                            Tab(
+                                              child: Text(
+                                                'Confirm',
+                                              ),
+                                            ),
+                                          ],
+                                          indicatorColor: Colors.grey,
+                                          indicatorSize:
+                                              TabBarIndicatorSize.label,
+                                          indicatorWeight: 3,
+                                          labelColor: Colors.black,
+                                          labelStyle: TextStyle(
+                                              fontSize: 16, color: Colors.red)),
+                                    ))),
                             CustomCreditCard(
                                 cardNumber: "0000 0000 0000 0000",
                                 cvv: "0000",

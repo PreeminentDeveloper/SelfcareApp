@@ -21,7 +21,7 @@ class _ForumState extends State<Forum> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
-                    onTap: () => Navigator.pop(context),
+                    // onTap: () => Navigator.pop(context),
                     child: Icon(
                       Icons.arrow_back,
                       color: Colors.white,
@@ -31,7 +31,7 @@ class _ForumState extends State<Forum> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Container(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.only(bottom: 10),
                         height: 30,
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -39,9 +39,13 @@ class _ForumState extends State<Forum> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.search,
-                              size: 20,
+                            suffixIcon: Padding(
+                              padding: const EdgeInsets.only(top: 5),
+                              child: Icon(
+                                Icons.search,
+                                size: 20,
+                                color: Colors.black,
+                              ),
                             ),
                             contentPadding: EdgeInsets.all(8),
                           ),

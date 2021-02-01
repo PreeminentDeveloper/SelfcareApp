@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:selfcareapp/Screens/Pages/login.dart';
+import 'package:selfcareapp/Screens/Pages/signup.dart';
 import 'package:selfcareapp/Screens/Pages/video_player.dart';
 import 'package:selfcareapp/Screens/Widgets/custom_list_tile.dart';
 
@@ -32,7 +34,7 @@ class _CoursesState extends State<Courses> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Container(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.only(bottom: 10),
                         height: 30,
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -40,9 +42,13 @@ class _CoursesState extends State<Courses> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.search,
-                              size: 20,
+                            suffixIcon: Padding(
+                              padding: const EdgeInsets.only(top: 5),
+                              child: Icon(
+                                Icons.search,
+                                size: 20,
+                                color: Colors.black,
+                              ),
                             ),
                             contentPadding: EdgeInsets.all(8),
                           ),
@@ -61,7 +67,7 @@ class _CoursesState extends State<Courses> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: Container(
                 height: MediaQuery.of(context).size.height / 3,
                 width: MediaQuery.of(context).size.width,
@@ -70,6 +76,38 @@ class _CoursesState extends State<Courses> {
                   fit: BoxFit.fitWidth,
                 ),
               ),
+            ),
+            Container(
+              height: 60,
+              child: DefaultTabController(
+                  length: 2,
+                  child: Scaffold(
+                    body: Divider(
+                      color: Colors.orange[50],
+                      height: 0,
+                      thickness: 2,
+                    ),
+                    backgroundColor: Colors.orange,
+                    appBar: TabBar(
+                        tabs: [
+                          Tab(
+                            child: Text(
+                              'Table of content',
+                            ),
+                          ),
+                          Tab(
+                            child: Text(
+                              'Description',
+                            ),
+                          ),
+                        ],
+                        indicatorColor: Colors.orange[50],
+                        indicatorSize: TabBarIndicatorSize.label,
+                        indicatorWeight: 7,
+                        labelColor: Colors.orange[50],
+                        labelStyle: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16)),
+                  )),
             ),
             Expanded(
               child: Container(

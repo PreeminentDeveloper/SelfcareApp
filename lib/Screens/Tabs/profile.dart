@@ -28,7 +28,7 @@ class _ProfileState extends State<Profile> {
                         Row(
                           children: [
                             GestureDetector(
-                              onTap: () => Navigator.pop(context),
+                              // onTap: () => Navigator.pop(context),
                               child: Icon(
                                 Icons.arrow_back,
                                 color: Colors.white,
