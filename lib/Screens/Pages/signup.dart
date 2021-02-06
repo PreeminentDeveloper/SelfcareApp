@@ -10,12 +10,12 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange[50],
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+              padding: const EdgeInsets.symmetric(vertical: 70, horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -52,7 +52,7 @@ class _SignUpState extends State<SignUp> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   child: Container(
-                    height: 50,
+                    height: 45,
                     decoration: BoxDecoration(
                         color: Colors.pink[50],
                         borderRadius: BorderRadius.circular(30)),
@@ -60,8 +60,7 @@ class _SignUpState extends State<SignUp> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Your Name",
-                        // hintStyle: TextStyle(fontSize: 18),
-                        contentPadding: EdgeInsets.only(left: 20),
+                        contentPadding: EdgeInsets.only(left: 20, bottom: 5),
                       ),
                     ),
                   ),
@@ -70,7 +69,7 @@ class _SignUpState extends State<SignUp> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   child: Container(
-                    height: 50,
+                    height: 45,
                     decoration: BoxDecoration(
                         color: Colors.pink[50],
                         borderRadius: BorderRadius.circular(30)),
@@ -78,8 +77,7 @@ class _SignUpState extends State<SignUp> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Email",
-                        // hintStyle: TextStyle(fontSize: 18),
-                        contentPadding: EdgeInsets.only(left: 20),
+                        contentPadding: EdgeInsets.only(left: 20, bottom: 5),
                       ),
                     ),
                   ),
@@ -88,16 +86,16 @@ class _SignUpState extends State<SignUp> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   child: Container(
-                    height: 50,
+                    height: 45,
                     decoration: BoxDecoration(
                         color: Colors.pink[50],
                         borderRadius: BorderRadius.circular(30)),
                     child: TextField(
+                      obscureText: true,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Password",
-                        // hintStyle: TextStyle(fontSize: 18),
-                        contentPadding: EdgeInsets.only(left: 20),
+                        contentPadding: EdgeInsets.only(left: 20, bottom: 5),
                       ),
                     ),
                   ),

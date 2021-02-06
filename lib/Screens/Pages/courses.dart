@@ -19,7 +19,7 @@ class _CoursesState extends State<Courses> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15, top: 25, bottom: 5),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 50, bottom: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -83,7 +83,7 @@ class _CoursesState extends State<Courses> {
                   length: 2,
                   child: Scaffold(
                     body: Divider(
-                      color: Colors.orange[50],
+                      color: Colors.white,
                       height: 0,
                       thickness: 2,
                     ),
@@ -101,10 +101,10 @@ class _CoursesState extends State<Courses> {
                             ),
                           ),
                         ],
-                        indicatorColor: Colors.orange[50],
+                        indicatorColor: Colors.white,
                         indicatorSize: TabBarIndicatorSize.label,
                         indicatorWeight: 7,
-                        labelColor: Colors.orange[50],
+                        labelColor: Colors.white,
                         labelStyle: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16)),
                   )),
@@ -112,7 +112,7 @@ class _CoursesState extends State<Courses> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.orange[50],
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),

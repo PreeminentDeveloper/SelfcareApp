@@ -21,7 +21,7 @@ class _ProfileState extends State<Profile> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(
-                        left: 15, right: 15, top: 20, bottom: 50),
+                        left: 15, right: 15, top: 50, bottom: 50),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -55,7 +55,7 @@ class _ProfileState extends State<Profile> {
               Container(
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                    color: Colors.orange[50],
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),
@@ -96,14 +96,14 @@ class _ProfileState extends State<Profile> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20, bottom: 40),
+                      padding: const EdgeInsets.only(top: 15, bottom: 40),
                       child: FlatButton(
                         onPressed: () {},
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15)),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                              vertical: 14, horizontal: 20),
+                              vertical: 10, horizontal: 20),
                           child: Column(
                             children: [
                               Text(
@@ -201,7 +201,7 @@ class _ProfileState extends State<Profile> {
                       onTap: () {},
                       leading: Container(
                         decoration: BoxDecoration(
-                            color: Colors.orange,
+                            color: Colors.red,
                             borderRadius: BorderRadius.circular(5)),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),

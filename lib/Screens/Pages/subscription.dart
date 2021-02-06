@@ -18,7 +18,7 @@ class _SubscriptionState extends State<Subscription> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15, top: 25, bottom: 5),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 50, bottom: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -52,7 +52,7 @@ class _SubscriptionState extends State<Subscription> {
             Expanded(
               child: Container(
                   decoration: BoxDecoration(
-                      color: Colors.orange[50],
+                      color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(30),
                           topRight: Radius.circular(30))),
@@ -69,7 +69,7 @@ class _SubscriptionState extends State<Subscription> {
                                 child: DefaultTabController(
                                     length: 3,
                                     child: Scaffold(
-                                      backgroundColor: Colors.orange[50],
+                                      backgroundColor: Colors.white,
                                       appBar: TabBar(
                                           tabs: [
                                             Tab(
@@ -105,14 +105,16 @@ class _SubscriptionState extends State<Subscription> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding:
-                                      const EdgeInsets.only(top: 20, left: 16),
+                                  padding: const EdgeInsets.only(
+                                      top: 20, left: 16, right: 16),
                                   child: Text("Add a new card"),
                                 ),
                                 Row(
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.only(left: 14),
+                                      padding: const EdgeInsets.only(
+                                        left: 14,
+                                      ),
                                       child: Image(
                                         image:
                                             AssetImage("lib/Assets/visa.png"),
@@ -129,7 +131,8 @@ class _SubscriptionState extends State<Subscription> {
                                   ],
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 14),
+                                  padding: const EdgeInsets.only(
+                                      left: 14, right: 14),
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
@@ -159,7 +162,8 @@ class _SubscriptionState extends State<Subscription> {
                                   height: 12,
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 14),
+                                  padding: const EdgeInsets.only(
+                                      left: 14, right: 14),
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
@@ -170,7 +174,8 @@ class _SubscriptionState extends State<Subscription> {
                                         child: Text("Card Number"),
                                       ),
                                       Container(
-                                        padding: EdgeInsets.only(left: 15),
+                                        padding: EdgeInsets.only(
+                                            left: 15, right: 15),
                                         decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(10),
@@ -188,69 +193,78 @@ class _SubscriptionState extends State<Subscription> {
                                 SizedBox(
                                   height: 12,
                                 ),
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                top: 10, bottom: 10, left: 5),
-                                            child: Text("CVV"),
-                                          ),
-                                          Container(
-                                            padding: EdgeInsets.only(left: 15),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(10),
-                                              color: Colors.grey.shade300,
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 14, right: 14),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                top: 10,
+                                                bottom: 10,
+                                                left: 5,
+                                              ),
+                                              child: Text("CVV"),
                                             ),
-                                            child: TextField(
-                                              decoration: InputDecoration(
-                                                  fillColor: Colors.grey,
-                                                  border: InputBorder.none),
-                                            ),
-                                          )
-                                        ],
+                                            Container(
+                                              padding:
+                                                  EdgeInsets.only(left: 15),
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(10),
+                                                color: Colors.grey.shade300,
+                                              ),
+                                              child: TextField(
+                                                decoration: InputDecoration(
+                                                    fillColor: Colors.grey,
+                                                    border: InputBorder.none),
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                    SizedBox(
-                                      width: 50,
-                                    ),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                top: 10, bottom: 10, left: 5),
-                                            child: Text("Expiry Date"),
-                                          ),
-                                          Container(
-                                            padding: EdgeInsets.only(left: 15),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(10),
-                                              color: Colors.grey.shade300,
-                                            ),
-                                            child: TextField(
-                                              decoration: InputDecoration(
-                                                  fillColor: Colors.grey,
-                                                  border: InputBorder.none),
-                                            ),
-                                          )
-                                        ],
+                                      SizedBox(
+                                        width: 50,
                                       ),
-                                    ),
-                                  ],
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  top: 10, bottom: 10, left: 5),
+                                              child: Text("Expiry Date"),
+                                            ),
+                                            Container(
+                                              padding:
+                                                  EdgeInsets.only(left: 15),
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(10),
+                                                color: Colors.grey.shade300,
+                                              ),
+                                              child: TextField(
+                                                decoration: InputDecoration(
+                                                    fillColor: Colors.grey,
+                                                    border: InputBorder.none),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 Container(
                                   width: MediaQuery.of(context).size.width,
-                                  padding:
-                                      const EdgeInsets.only(top: 30, bottom: 5),
+                                  padding: const EdgeInsets.only(
+                                      top: 30, bottom: 5, left: 14, right: 14),
                                   child: FlatButton(
                                     onPressed: () {},
                                     shape: RoundedRectangleBorder(

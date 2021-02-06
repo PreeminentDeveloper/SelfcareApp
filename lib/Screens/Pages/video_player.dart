@@ -31,7 +31,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
               child: GestureDetector(
                 onTap: () => Navigator.pop(context),
                 child: Icon(
@@ -39,6 +39,9 @@ class _VideoPlayerState extends State<VideoPlayer> {
                   color: Colors.white,
                 ),
               ),
+            ),
+            SizedBox(
+              height: 60,
             ),
             Container(
               color: Colors.grey,
@@ -119,7 +122,39 @@ class _VideoPlayerState extends State<VideoPlayer> {
                   ),
                 ],
               ),
-            )
+            ),
+            // Container(
+            //   height: 60,
+            //   child: DefaultTabController(
+            //       length: 2,
+            //       child: Scaffold(
+            //         body: Divider(
+            //           color: Colors.white,
+            //           height: 0,
+            //           thickness: 2,
+            //         ),
+            //         backgroundColor: Colors.orange,
+            //         appBar: TabBar(
+            //             tabs: [
+            //               Tab(
+            //                 child: Text(
+            //                   'Table of content',
+            //                 ),
+            //               ),
+            //               Tab(
+            //                 child: Text(
+            //                   'Description',
+            //                 ),
+            //               ),
+            //             ],
+            //             indicatorColor: Colors.white,
+            //             indicatorSize: TabBarIndicatorSize.label,
+            //             indicatorWeight: 7,
+            //             labelColor: Colors.white,
+            //             labelStyle: TextStyle(
+            //                 fontWeight: FontWeight.bold, fontSize: 16)),
+            //       )),
+            // ),
           ],
         ),
       ),

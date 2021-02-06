@@ -47,7 +47,8 @@ class CustomCard extends StatelessWidget {
                           children: [
                             Text(
                               cost,
-                              style: TextStyle(fontSize: 10),
+                              style: TextStyle(
+                                  fontSize: 10, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                               width: 10,

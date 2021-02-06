@@ -16,7 +16,7 @@ class _RecommendationState extends State<Recommendation> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15, top: 50),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 70),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -44,7 +44,7 @@ class _RecommendationState extends State<Recommendation> {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.orange[50],
+                  color: Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30))),

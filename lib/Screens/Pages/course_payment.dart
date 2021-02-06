@@ -33,7 +33,7 @@ class _CoursePaymentState extends State<CoursePayment> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 15, vertical: 30),
+                        horizontal: 15, vertical: 50),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -53,7 +53,7 @@ class _CoursePaymentState extends State<CoursePayment> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 40, vertical: 105),
+                        horizontal: 40, vertical: 115),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -119,28 +119,25 @@ class _CoursePaymentState extends State<CoursePayment> {
                             )
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 12),
-                            height: 20,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.play_arrow,
-                                  color: Colors.white,
-                                  size: 15,
-                                ),
-                                Text(
-                                  "20 hours, 7 minutes",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            ),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          height: 20,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.play_arrow,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                              Text(
+                                "20 hours, 7 minutes",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
                           ),
                         ),
                         Container(
@@ -199,7 +196,7 @@ class _CoursePaymentState extends State<CoursePayment> {
               ),
               Container(
                 height: 100,
-                color: Colors.orange[50],
+                color: Colors.white,
               )
             ],
           ),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:selfcareapp/Screens/Widgets/custom_card.dart';
 
-class Listing extends StatefulWidget {
+class Library extends StatefulWidget {
   @override
-  _ListingState createState() => _ListingState();
+  _LibraryState createState() => _LibraryState();
 }
 
-class _ListingState extends State<Listing> {
+class _LibraryState extends State<Library> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,7 @@ class _ListingState extends State<Listing> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15, top: 25, bottom: 5),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 50, bottom: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -29,7 +29,9 @@ class _ListingState extends State<Listing> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                      ),
                       child: Container(
                         padding: EdgeInsets.only(bottom: 10),
                         height: 30,
@@ -87,7 +89,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Cardiology Education",
@@ -101,7 +103,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Food Science",
@@ -115,7 +117,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Animal Science",
@@ -141,7 +143,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Nurses",
@@ -155,7 +157,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Personal Development",
@@ -169,7 +171,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Medical Writing",
@@ -183,7 +185,7 @@ class _ListingState extends State<Listing> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Psychology",
@@ -198,14 +200,15 @@ class _ListingState extends State<Listing> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.orange[50],
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),
                 child: ListView(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(30.0),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 35, horizontal: 30),
                       child: Column(
                         children: [
                           Row(

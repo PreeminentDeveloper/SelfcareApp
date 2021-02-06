@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
       endDrawer: CustomDrawer(),
       body: SafeArea(
         child: Container(
-          color: Colors.orange[50],
+          color: Colors.white,
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20))),
-                  padding: EdgeInsets.only(left: 20, right: 20, top: 20),
+                  padding: EdgeInsets.only(left: 20, right: 20, top: 50),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -42,13 +42,13 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.symmetric(vertical: 20),
                         child: Text(
                           " Welcome",
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 28, color: Colors.white),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(bottom: 40),
                         child: Container(
-                          height: 50,
+                          height: 45,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(15)),
@@ -56,8 +56,9 @@ class _HomeState extends State<Home> {
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: "Search",
-                              hintStyle: TextStyle(fontSize: 18),
-                              contentPadding: EdgeInsets.only(left: 20),
+                              hintStyle: TextStyle(fontSize: 16),
+                              contentPadding:
+                                  EdgeInsets.only(left: 20, bottom: 5),
                             ),
                           ),
                         ),
@@ -66,7 +67,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 Container(
-                    padding: EdgeInsets.only(left: 20, right: 20, top: 40),
+                    padding: EdgeInsets.only(left: 20, right: 20, top: 30),
                     child: Column(
                       children: [
                         Padding(
@@ -74,7 +75,7 @@ class _HomeState extends State<Home> {
                               vertical: 18, horizontal: 15),
                           child: Text(
                             "Are you having headache?",
-                            style: TextStyle(fontSize: 28, height: 1.5),
+                            style: TextStyle(fontSize: 25, height: 1.5),
                           ),
                         ),
                         Padding(
@@ -91,7 +92,7 @@ class _HomeState extends State<Home> {
                                       horizontal: 20, vertical: 14),
                                   child: Text(
                                     "A. Yes",
-                                    style: TextStyle(fontSize: 22),
+                                    style: TextStyle(fontSize: 18),
                                   ),
                                 ),
                                 Padding(
@@ -99,7 +100,7 @@ class _HomeState extends State<Home> {
                                         horizontal: 20, vertical: 12),
                                     child: Icon(
                                       Icons.check_box_outline_blank,
-                                      size: 22,
+                                      size: 20,
                                     ))
                               ],
                             ),
@@ -119,7 +120,7 @@ class _HomeState extends State<Home> {
                                       horizontal: 20, vertical: 14),
                                   child: Text(
                                     "B. No",
-                                    style: TextStyle(fontSize: 22),
+                                    style: TextStyle(fontSize: 18),
                                   ),
                                 ),
                                 Padding(
@@ -127,7 +128,7 @@ class _HomeState extends State<Home> {
                                         horizontal: 20, vertical: 12),
                                     child: Icon(
                                       Icons.check_box_outline_blank,
-                                      size: 22,
+                                      size: 20,
                                     ))
                               ],
                             ),
@@ -147,7 +148,7 @@ class _HomeState extends State<Home> {
                                       horizontal: 20, vertical: 14),
                                   child: Text(
                                     "C. Slightly",
-                                    style: TextStyle(fontSize: 22),
+                                    style: TextStyle(fontSize: 18),
                                   ),
                                 ),
                                 Padding(
@@ -155,7 +156,7 @@ class _HomeState extends State<Home> {
                                         horizontal: 20, vertical: 12),
                                     child: Icon(
                                       Icons.check_box_outline_blank,
-                                      size: 22,
+                                      size: 20,
                                     ))
                               ],
                             ),

@@ -12,14 +12,14 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.orange[50],
+        color: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               alignment: Alignment.centerLeft,
               color: Colors.orange,
-              height: 100,
+              height: 140,
               width: MediaQuery.of(context).size.width,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               child: Text(
@@ -57,20 +57,6 @@ class CustomDrawer extends StatelessWidget {
                                 CoursePayment())),
                     title: Text(
                       "Course Payment",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    trailing: Icon(
-                      Icons.arrow_forward_ios,
-                      size: 18,
-                    ),
-                  ),
-                  ListTile(
-                    onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) => Forum())),
-                    title: Text(
-                      "Forum",
                       style: TextStyle(fontSize: 20),
                     ),
                     trailing: Icon(

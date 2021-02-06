@@ -11,13 +11,13 @@ class _LogInState extends State<LogIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange[50],
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.only(
-                  left: 20, right: 20, top: 50, bottom: 30),
+                  left: 20, right: 20, top: 70, bottom: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -60,7 +60,7 @@ class _LogInState extends State<LogIn> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   child: Container(
-                    height: 50,
+                    height: 45,
                     decoration: BoxDecoration(
                         color: Colors.pink[50],
                         borderRadius: BorderRadius.circular(30)),
@@ -68,8 +68,7 @@ class _LogInState extends State<LogIn> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Username",
-                        // hintStyle: TextStyle(fontSize: 18),
-                        contentPadding: EdgeInsets.only(left: 20),
+                        contentPadding: EdgeInsets.only(left: 15, bottom: 3),
                       ),
                     ),
                   ),
@@ -78,7 +77,7 @@ class _LogInState extends State<LogIn> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   child: Container(
-                    height: 50,
+                    height: 45,
                     decoration: BoxDecoration(
                         color: Colors.pink[50],
                         borderRadius: BorderRadius.circular(30)),
@@ -86,15 +85,18 @@ class _LogInState extends State<LogIn> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Password",
-                        // hintStyle: TextStyle(fontSize: 18),
                         suffixIcon: Padding(
-                          padding: const EdgeInsets.only(top: 15, right: 20),
+                          padding: const EdgeInsets.only(
+                            top: 15,
+                            right: 20,
+                          ),
                           child: Text(
                             "Forgot?",
                             style: TextStyle(color: Colors.orange),
                           ),
                         ),
-                        contentPadding: EdgeInsets.only(left: 20, top: 15),
+                        contentPadding:
+                            EdgeInsets.only(left: 15, top: 15, bottom: 14),
                       ),
                     ),
                   ),

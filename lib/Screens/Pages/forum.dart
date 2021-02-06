@@ -16,7 +16,7 @@ class _ForumState extends State<Forum> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 15, top: 25, bottom: 5),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 50, bottom: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -96,7 +96,7 @@ class _ForumState extends State<Forum> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            color: Colors.orange[50],
+                            color: Colors.white,
                             onPressed: () {},
                             child: Text(
                               "Featured Courses",
@@ -141,7 +141,7 @@ class _ForumState extends State<Forum> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.orange[50],
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),
