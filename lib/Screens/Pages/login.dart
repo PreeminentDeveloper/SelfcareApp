@@ -68,6 +68,8 @@ class _LogInState extends State<LogIn> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Username",
+                        hintStyle: TextStyle(
+                            fontSize: 14, fontWeight: FontWeight.w500),
                         contentPadding: EdgeInsets.only(left: 15, bottom: 3),
                       ),
                     ),
@@ -82,9 +84,12 @@ class _LogInState extends State<LogIn> {
                         color: Colors.pink[50],
                         borderRadius: BorderRadius.circular(30)),
                     child: TextField(
+                      obscureText: true,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Password",
+                        hintStyle: TextStyle(
+                            fontSize: 14, fontWeight: FontWeight.w500),
                         suffixIcon: Padding(
                           padding: const EdgeInsets.only(
                             top: 15,
@@ -92,7 +97,8 @@ class _LogInState extends State<LogIn> {
                           ),
                           child: Text(
                             "Forgot?",
-                            style: TextStyle(color: Colors.orange),
+                            style:
+                                TextStyle(color: Colors.orange, fontSize: 12),
                           ),
                         ),
                         contentPadding:

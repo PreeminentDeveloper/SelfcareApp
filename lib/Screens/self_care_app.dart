@@ -30,21 +30,21 @@ class _SelfCareAppState extends State<SelfCareApp> {
         },
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.home_outlined),
               label: "Home",
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person_pin),
+            icon: Icon(Icons.account_circle_outlined),
             label: "Profile",
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notes),
+            icon: Icon(Icons.library_books_outlined),
             label: "Library",
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.book),
+            icon: Icon(Icons.bookmarks_outlined),
             label: "Books",
             backgroundColor: Colors.white,
           ),

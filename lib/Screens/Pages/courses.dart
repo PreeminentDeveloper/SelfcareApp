@@ -93,11 +93,13 @@ class _CoursesState extends State<Courses> {
                           Tab(
                             child: Text(
                               'Table of content',
+                              style: TextStyle(fontSize: 14),
                             ),
                           ),
                           Tab(
                             child: Text(
                               'Description',
+                              style: TextStyle(fontSize: 14),
                             ),
                           ),
                         ],

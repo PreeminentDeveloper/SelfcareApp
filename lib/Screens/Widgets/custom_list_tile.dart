@@ -34,8 +34,7 @@ class CustomListTile extends StatelessWidget {
                     children: [
                       Text(
                         title,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       Text(
                         time,

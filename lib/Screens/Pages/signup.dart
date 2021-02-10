@@ -60,6 +60,8 @@ class _SignUpState extends State<SignUp> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Your Name",
+                        hintStyle: TextStyle(
+                            fontSize: 14, fontWeight: FontWeight.w500),
                         contentPadding: EdgeInsets.only(left: 20, bottom: 5),
                       ),
                     ),
@@ -77,6 +79,8 @@ class _SignUpState extends State<SignUp> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Email",
+                        hintStyle: TextStyle(
+                            fontSize: 14, fontWeight: FontWeight.w500),
                         contentPadding: EdgeInsets.only(left: 20, bottom: 5),
                       ),
                     ),
@@ -95,6 +99,8 @@ class _SignUpState extends State<SignUp> {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Password",
+                        hintStyle: TextStyle(
+                            fontSize: 14, fontWeight: FontWeight.w500),
                         contentPadding: EdgeInsets.only(left: 20, bottom: 5),
                       ),
                     ),

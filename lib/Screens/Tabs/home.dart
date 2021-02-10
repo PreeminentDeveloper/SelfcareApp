@@ -8,6 +8,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  bool optionA = false, optionB = false, optionC = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,13 +97,24 @@ class _HomeState extends State<Home> {
                                     style: TextStyle(fontSize: 18),
                                   ),
                                 ),
-                                Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 20, vertical: 12),
-                                    child: Icon(
-                                      Icons.check_box_outline_blank,
-                                      size: 20,
-                                    ))
+                                GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      optionA = true;
+                                      optionB = false;
+                                      optionC = false;
+                                    });
+                                  },
+                                  child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20, vertical: 12),
+                                      child: Icon(
+                                        optionA == false
+                                            ? Icons.check_box_outline_blank
+                                            : Icons.check_box,
+                                        size: 20,
+                                      )),
+                                )
                               ],
                             ),
                           ),
@@ -123,13 +136,24 @@ class _HomeState extends State<Home> {
                                     style: TextStyle(fontSize: 18),
                                   ),
                                 ),
-                                Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 20, vertical: 12),
-                                    child: Icon(
-                                      Icons.check_box_outline_blank,
-                                      size: 20,
-                                    ))
+                                GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      optionB = true;
+                                      optionA = false;
+                                      optionC = false;
+                                    });
+                                  },
+                                  child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20, vertical: 12),
+                                      child: Icon(
+                                        optionB == false
+                                            ? Icons.check_box_outline_blank
+                                            : Icons.check_box,
+                                        size: 20,
+                                      )),
+                                )
                               ],
                             ),
                           ),
@@ -151,13 +175,24 @@ class _HomeState extends State<Home> {
                                     style: TextStyle(fontSize: 18),
                                   ),
                                 ),
-                                Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 20, vertical: 12),
-                                    child: Icon(
-                                      Icons.check_box_outline_blank,
-                                      size: 20,
-                                    ))
+                                GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      optionC = true;
+                                      optionA = false;
+                                      optionB = false;
+                                    });
+                                  },
+                                  child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20, vertical: 12),
+                                      child: Icon(
+                                        optionC == false
+                                            ? Icons.check_box_outline_blank
+                                            : Icons.check_box,
+                                        size: 20,
+                                      )),
+                                )
                               ],
                             ),
                           ),

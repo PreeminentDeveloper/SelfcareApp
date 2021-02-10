@@ -135,7 +135,7 @@ class _ProfileState extends State<Profile> {
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.store_mall_directory,
-                            size: 20,
+                            size: 16,
                             color: Colors.blueGrey,
                           ),
                         ),
@@ -159,7 +159,7 @@ class _ProfileState extends State<Profile> {
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.subscriptions,
-                            size: 20,
+                            size: 16,
                             color: Colors.blueGrey,
                           ),
                         ),
@@ -183,7 +183,7 @@ class _ProfileState extends State<Profile> {
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.payment,
-                            size: 20,
+                            size: 16,
                             color: Colors.blueGrey,
                           ),
                         ),
@@ -207,7 +207,7 @@ class _ProfileState extends State<Profile> {
                           padding: const EdgeInsets.all(5.0),
                           child: Icon(
                             Icons.logout,
-                            size: 20,
+                            size: 16,
                             color: Colors.white,
                           ),
                         ),

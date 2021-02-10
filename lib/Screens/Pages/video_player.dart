@@ -41,7 +41,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
               ),
             ),
             SizedBox(
-              height: 60,
+              height: 10,
             ),
             Container(
               color: Colors.grey,
@@ -49,14 +49,14 @@ class _VideoPlayerState extends State<VideoPlayer> {
                 alignment: Alignment.center,
                 children: [
                   Container(
-                    height: 250,
+                    height: 200,
                     width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                      image: AssetImage(
-                        "lib/Assets/kidney.jpg",
-                      ),
-                    )),
+                            image: AssetImage(
+                              "lib/Assets/kidney.jpg",
+                            ),
+                            fit: BoxFit.cover)),
                   ),
                   GestureDetector(
                     onTap: () {
@@ -89,7 +89,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
                     Icon(
                       Icons.volume_up,
                       color: Colors.white,
-                      size: 20,
+                      size: 18,
                     ),
                     Container(
                         width: MediaQuery.of(context).size.width - 50,
@@ -97,7 +97,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
                     Icon(
                       Icons.zoom_out_map,
                       color: Colors.white,
-                      size: 20,
+                      size: 18,
                     ),
                   ],
                 )),
@@ -110,7 +110,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
                     "Python: Code Programming",
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 24,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
@@ -123,38 +123,40 @@ class _VideoPlayerState extends State<VideoPlayer> {
                 ],
               ),
             ),
-            // Container(
-            //   height: 60,
-            //   child: DefaultTabController(
-            //       length: 2,
-            //       child: Scaffold(
-            //         body: Divider(
-            //           color: Colors.white,
-            //           height: 0,
-            //           thickness: 2,
-            //         ),
-            //         backgroundColor: Colors.orange,
-            //         appBar: TabBar(
-            //             tabs: [
-            //               Tab(
-            //                 child: Text(
-            //                   'Table of content',
-            //                 ),
-            //               ),
-            //               Tab(
-            //                 child: Text(
-            //                   'Description',
-            //                 ),
-            //               ),
-            //             ],
-            //             indicatorColor: Colors.white,
-            //             indicatorSize: TabBarIndicatorSize.label,
-            //             indicatorWeight: 7,
-            //             labelColor: Colors.white,
-            //             labelStyle: TextStyle(
-            //                 fontWeight: FontWeight.bold, fontSize: 16)),
-            //       )),
-            // ),
+            Container(
+              height: 60,
+              child: DefaultTabController(
+                  length: 2,
+                  child: Scaffold(
+                    body: Divider(
+                      color: Colors.white,
+                      height: 0,
+                      thickness: 2,
+                    ),
+                    backgroundColor: Colors.transparent,
+                    appBar: TabBar(
+                        tabs: [
+                          Tab(
+                            child: Text(
+                              'Table of content',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                          Tab(
+                            child: Text(
+                              'Description',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                        ],
+                        indicatorColor: Colors.lightBlue,
+                        indicatorSize: TabBarIndicatorSize.label,
+                        indicatorWeight: 7,
+                        labelColor: Colors.white,
+                        labelStyle: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16)),
+                  )),
+            ),
           ],
         ),
       ),
